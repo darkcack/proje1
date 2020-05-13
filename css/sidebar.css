@@ -1,0 +1,58 @@
+.sidenav {
+    
+    height: 100%; /*Boyunu %50 ayarladık */
+    width: 160px; /* genişliğini 160 px */
+    z-index: 1; /* Diğer objelerin önüne ayarladık*/
+    top: 0; /* üst kısmın her türlü boşluğunu 0ladık*/
+    left: 0; /* Soldaki boşluğu 0ladık*/
+    background-color: white; /* arka planı beyaz yaptık*/
+    padding-top: 20px; /* üstün paddingini 20 px ayarladık */
+    position: sticky; /* Aşağı inerken bizimle gelmesi için yapışkan pozisyon yaptık*/
+    position: -webkit-sticky; /* Aşağı inerken bizimle gelmesi için yapışkan pozisyon yaptık */
+   opacity: 0.85; /* biraz saydamlık verdik */
+   float:left; /* sola yasladık */
+   
+    
+  }
+
+ 
+  
+  .sidenav a, .acilirPencereBtn {
+    padding: 6px 8px 6px 16px; /* gerekli boşluklar */
+    text-decoration: none; /* yazı dekorasyonunu sıfırladık*/
+    font-size: 25px; /* fontu büyüttük */
+    color: black; /* Yazı rengi siyah */
+    display: block; /* görünümü bloklaştırdık*/
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .acilirPencereBtn:hover {
+    background-color: #735268; /* üzerine gelinince arka plan rengi*/
+    color:white; /* yazı rengi beyaz */
+  } 
+  
+
+  
+  .dropdnicerik {
+    display: none; /* displayi temizledik */
+    background-color: white; /*arka planı beyaz yaptık */
+    padding-left: 8px; /* sola 8 piksel padding verdik*/
+  }
+  
+
+
+  .acilirPencereBtn
+  {
+    background-color: white; /* arka planı beyaz yaptık */
+    display: ruby-text; /* sadece yazı görünümü*/
+    border: hidden; /* butonun kenarlarını  gizledik*/
+    width: 160px; /* 160 piksellik en verdik */
+
+  }
+
+
+  
+  @media screen and (max-height: 450px) { /* mobil görünüm */
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

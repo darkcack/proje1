@@ -1,0 +1,286 @@
+<html>
+    <head>
+        <link rel="StyleSheet" href="css/genel.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/sidebar.css">
+
+    <style>
+
+    
+ .navbar {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1; 
+  opacity: 0.85;
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  height: 7%; /* %9 yükseklik verdik*/
+  line-height: 30px; /* 35 piksel satır yüksekliği */
+  opacity: 0.85;
+}
+
+
+.navbar a, .acilirPencereBtn {
+  float:right;
+    padding: 6px 8px 6px 16px; /* gerekli boşluklar */
+    text-decoration: none; /* yazı dekorasyonunu sıfırladık*/
+    font-size: 20px; /* fontu büyüttük */
+    color: black; /* Yazı rengi siyah */
+    display: block; /* görünümü bloklaştırdık*/
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #735268; /* üzerine gelinince arka plan rengi*/
+    color:white; /* yazı rengi beyaz */
+}
+
+
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 6px 8px 6px 16px; /* gerekli boşluklar */
+  font-size: 20px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  float:left;
+}
+.dropdown-content a:hover {
+    background-color: #735268; /* üzerine gelinince arka plan rengi*/
+    color:white; /* yazı rengi beyaz */
+
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+     background-color: #735268; /* üzerine gelinince arka plan rengi*/
+    color:white; /* yazı rengi beyaz */
+}
+
+.yumusak
+{
+  border-radius: 30px;
+}
+
+    </style>
+    </head>
+    <body>
+
+
+
+
+    <div class="col-md-8" style="margin-left:auto;margin-right:auto;padding-bottom: 2vh;padding-top: 5vh;">
+
+        <!--Navbar başlangıcı-->  
+
+        <div class="navbar yumusak" >
+    <img src="img/ico/bookshop.png" width="100px" height="70px" style="float: left;"> 
+    <a class="yumusak" href="anasayfa.html">Ana Sayfa</a>
+
+      <a class="yumusak"href="kitap_ozet.html">Kitap Özetleri</a>
+      <a class="yumusak"href="iletisim.html">İletişim</a>
+      <a class="yumusak"href="hakkımızda.html">Hakkımızda</a>
+      <div class="dropdown">
+        <button class="dropbtn yumusak">Açılır Menü</button>
+        <div class="dropdown-content">
+            <a  href="anasayfa.html">Ana Sayfa</a>
+            <a href="kitap_ozet.html">Kitap Özetleri</a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="hakkımızda.html">Hakkımızda</a>
+        </div>
+      </div>
+
+      </div>
+         <!--Navbar bitişi-->
+
+      <div style="padding-top: 5vh;"></div>
+
+
+        <!-- Banner Baslangıcı-->
+        <div class="banner-foto" style="height: 35%">
+          <div class="banner-yazi">
+            <h1 style="font-size:50px">Ben Mert Aktaş</h1>
+            <p>Web Teknolojileri Vize Ödevi 2020 Numara: 171001037 </p>
+            <p>Fareyi kitapların üzerine getirin !!!!</p>
+            <p>Commentlerim css dosyalarında </p>
+          </div>
+        </div>
+        <!--Banner Bitisi-->
+      </div>
+
+          <div class="container">
+
+            <div class="row">
+
+                <div >
+
+                    <div class="row col-md-12" style="padding-top: 3vh;padding-bottom: 3vh;margin-left:6vh;margin-right: auto;">
+
+                        <div class="col">
+                                 <!--Resim-Kutusu Başlangıcı-->
+                                 <div class="resim-kutusu">
+                                     <div class="resim-kutusu-ic">
+                                       <div class="resim-kutusu-on">
+                                         <img src="img/Book/book1.jpg" alt="Fahrenheit" style="width: 300px;height: 400px;">
+                                       </div>
+                                       <div class="resim-kutusu-arka ">
+                                         <h2 class="kutu-yazi-golge" style="padding-top: 13vh;" >Fahrenheit 451</h2>
+                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, veniam amet possimus quibusdam quisquam eaque voluptates saepe aliquid provident nostrum, sed placeat odit ullam laboriosam commodi assumenda suscipit error repellendus!</p>
+                                       </div>
+                                     </div>
+                                   </div>
+                                   <!--Resim-Kutusu bitişi-->
+                        </div>
+                        <div class="col">
+                         <!--Resim-Kutusu Başlangıcı-->
+                         <div class="resim-kutusu">
+                             <div class="resim-kutusu-ic">
+                               <div class="resim-kutusu-on">
+                                 <img src="img/Book/book2.jpg" alt="1984" style="width: 300px;height: 400px;">
+                               </div>
+                               <div class="resim-kutusu-arka">
+                                 <h2 class="kutu-yazi-golge" style="padding-top: 13vh;">1984</h2>
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tempore non. Libero corrupti nobis fugiat voluptatem at perspiciatis, nam quis similique eveniet quo cumque labore voluptas quidem sit ut aperiam?</p>
+                               </div>
+                             </div>
+                           </div>
+                           <!--Resim-Kutusu bitişi-->
+                        </div>
+                        <div class="col">
+                         <!--Resim-Kutusu Başlangıcı-->
+                         <div class="resim-kutusu">
+                             <div class="resim-kutusu-ic">
+                               <div class="resim-kutusu-on">
+                                 <img src="img/Book/book3.jpg" alt="Şeker Portakalı" style="width: 300px;height: 400px;">
+                               </div>
+                               <div class="resim-kutusu-arka">
+                                 <h2 class="kutu-yazi-golge" style="padding-top: 13vh;">Şeker Portakalı</h2>
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores unde qui sit, labore inventore iste ad ducimus id nostrum ipsam ipsa nihil neque fuga minus asperiores quis blanditiis quod? Rerum.</p>
+                               </div>
+                             </div>
+                           </div>
+                           <!--Resim-Kutusu bitişi-->
+                        </div>
+                      
+                 
+                     </div>
+                      <!-- İlk Kitap Satiri -->
+
+                      
+      <!-- İkinci Kitap Satiri-->
+    <div class="row col-md-12 "style="padding-top: 3vh;padding-bottom: 3vh;margin-left:6vh;margin-right: auto;">
+
+        <div class="col">
+                 <!--Resim-Kutusu Başlangıcı-->
+                 <div class="resim-kutusu">
+                     <div class="resim-kutusu-ic">
+                       <div class="resim-kutusu-on">
+                         <img src="img/Book/book5.jpg" alt="Hayvan Çiftliği" style="width: 300px;height: 400px;">
+                       </div>
+                       <div class="resim-kutusu-arka ">
+                         <h2 style="padding-top: 13vh;" class="kutu-yazi-golge" >Hayvan Çiftliği</h2>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quam repudiandae officiis quo hic recusandae ipsam ducimus sapiente autem optio a amet aperiam quibusdam saepe eaque, quas error quasi temporibus!</p>
+                       </div>
+                     </div>
+                   </div>
+                   <!--Resim-Kutusu bitişi-->
+        </div>
+        <div class="col">
+         <!--Resim-Kutusu Başlangıcı-->
+         <div class="resim-kutusu">
+             <div class="resim-kutusu-ic">
+               <div class="resim-kutusu-on">
+                 <img src="img/Book/book6.jpg" alt="Otomatik Portakal" style="width: 300px;height: 400px;">
+               </div>
+               <div class="resim-kutusu-arka">
+                 <h2 style="padding-top: 13vh;" class="kutu-yazi-golge">Otomatik Portakal</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, modi. Mollitia ullam consequuntur voluptate aperiam nihil tempora fugiat repellat veritatis eaque reprehenderit voluptatem optio, totam a molestias aliquid placeat officia.</p>
+               </div>
+             </div>
+           </div>
+           <!--Resim-Kutusu bitişi-->
+        </div>
+        <div class="col">
+         <!--Resim-Kutusu Başlangıcı-->
+         <div class="resim-kutusu">
+             <div class="resim-kutusu-ic">
+               <div class="resim-kutusu-on">
+                 <img src="img/Book/book7.jpg" alt="Ateşten Gömlek" style="width: 300px;height: 400px;">
+               </div>
+               <div class="resim-kutusu-arka">
+                 <h2 class="kutu-yazi-golge" style="padding-top: 13vh;">Ateşten Gömlek</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corrupti nobis dignissimos explicabo sed est laboriosam similique nisi quisquam rem, voluptatem id quia molestiae blanditiis, autem earum at temporibus enim.</p>
+               </div>
+             </div>
+           </div>
+           <!--Resim-Kutusu bitişi-->
+        </div>
+        
+  
+     </div>
+     <!-- İkinci Kitap Satiri-->
+            
+
+
+
+
+     <div class="footer col yumusak" style="margin:0;padding:0;margin-left: 30px;">
+      <a  href="https://www.linkedin.com/in/mert-aktas/"> <img src="img/ico/linkedin_icon.png" width="50px" height="55px" style="float: left;"> </a>
+      <p>FOOTER Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <script >
+          var dropdown = document.getElementsByClassName("acilirPencereBtn");
+          var i;
+          
+          for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+            });
+          }
+                    </script>
+    </body>
+</html>

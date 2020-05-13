@@ -1,0 +1,37 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.wave
+{
+    background-color: orangered;
+    color:#fff;
+    text-align: center;
+    margin: 5vh 0 5vh 0;
+    
+}
+
+
+.wave h1{
+    font-size: 6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.wave p{
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 5rem 0 5rem
+}
+
+.wave svg{
+    display: block;
+
+}
+.wave-upper
+{
+ background: #fff ;
+}
+

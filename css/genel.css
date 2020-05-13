@@ -1,0 +1,157 @@
+body {
+    background-image: url("../img/back.jpg"); /* Arka Planımı belirledim! */
+    background-repeat: no-repeat;   /* Arka Planın tekrar etmemesini sağladım! */
+    background-attachment: fixed;  /* Arka Planı fixledim böylece ne kadar aşağı inersem ineyim aynı görüntüyü göreceğim! */
+    background-size: 100%;  /* Arka Planımın boyutunu %100 yaptım  */
+    backdrop-filter: blur(2px); /* Arka Planımı bulanıklaştırdım*/
+    margin: 0; /* 4 yönden margini sıfırladık */
+	}
+
+ul {
+  list-style-type: none; /* List stil tipini none ayarladık */
+  margin: 0; /* ul'nin tüm marginini 0 ayarladık */
+  padding: 0; /* ul'nin tüm paddingini 0 ayarladık */
+  overflow: hidden; /* taşan scroll'u gizliyoruz */
+  background-color: white; /* arka plan rengini beyaz yaptık */
+  
+}
+
+li {
+  float: left; /* tüm içeriği sola kaydırdık */
+}
+
+li a {
+  display: block; /* elementi bloklaştırdık */
+  color: black; /*  arka planı siyah yaptık */
+  text-align: center; /* yazı konumunu ortaladık */
+  padding: 14px 16px; /* 14, 16 piksel olmak üzere padding verdik */
+  text-decoration: none; /* herhangi bir yazı dekorasyonu vermedik */
+  height: 9%; /* %9 yükseklik verdik*/
+  line-height: 35px; /* 35 piksel satır yüksekliği */
+  
+}
+.active
+{
+background-color: #626262; /* aktif navbar ögesinin rengi */
+}
+
+li a:hover {
+  background-color: #735268; /* üzerine gelince arka plan rengi */
+    text-decoration: none; /* herhangi bir yazı dekorasyonu vermedik */
+  color:white   /* yazı rengini beyaz yaptık */
+}
+
+
+.banner-foto {
+  background-image: linear-gradient(rgba(12, 21, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Banner/books.jpg"); /* efektli arkaplan */
+  height: 50%; /* yüksekliği %50 ayarladık */
+  background-position: center; /* arka plan pozisyonunu ortaladık */
+  background-repeat: no-repeat; /* herhangi bir yazı dekorasyonu vermedik */
+  background-size: cover; /* cover boyutu */
+  position: relative;  /* pozisyonlama */
+}
+
+.banner-foto2 {
+  background-image: linear-gradient(rgba(12, 21, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Banner/books2.jpg"); /* efektli arkaplan */
+  height: 50%; /* yüksekliği %50 ayarladık */
+  background-position: center; /* arka plan pozisyonunu ortaladık */
+  background-repeat: no-repeat; /* herhangi bir yazı dekorasyonu vermedik */
+  background-size: cover; /* cover boyutu */
+  position: relative;  /* pozisyonlama */
+}
+
+.banner-foto3 {
+  background-image: linear-gradient(rgba(12, 21, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Banner/contact.jpg"); /* efektli arkaplan */
+  height: 50%; /* yüksekliği %50 ayarladık */
+  background-position: center; /* arka plan pozisyonunu ortaladık */
+  background-repeat: no-repeat; /* herhangi bir yazı dekorasyonu vermedik */
+  background-size: cover; /* cover boyutu */
+  position: relative;  /* pozisyonlama */
+}
+
+.banner-foto4 {
+  background-image: linear-gradient(rgba(12, 21, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Banner/AboutUs.jpg"); /* efektli arkaplan */
+  height: 50%; /* yüksekliği %50 ayarladık */
+  background-position: center; /* arka plan pozisyonunu ortaladık */
+  background-repeat: no-repeat; /* herhangi bir yazı dekorasyonu vermedik */
+  background-size: cover; /* cover boyutu */
+  position: relative;  /* pozisyonlama */
+}
+
+.banner-yazi {
+  text-align: center; /* yazı ortalama */
+  position: absolute;  /* pozisyonu sabitledik */
+  top: 50%; /* yükselti %50 */
+  left: 50%; /* sol %50*/
+  transform: translate(-50%, -50%);  /* transform efekti */
+  color: white; /* yazı rengi */
+}
+
+.resim-kutusu {
+  background-color: transparent; /* transparan arka plan */
+  width: 300px; /* 300 piksel en*/
+  height: 400px; /*400 piksel yükseklik */
+  
+  perspective: 1000px; /* 1000 piksel perspektif */
+ 
+ 
+}
+
+.resim-kutusu-ic {
+  position: relative; /* göreceli pozisyon */
+  width: 100%; /* %100 en */
+  height: 100%; /* %100 boy */
+  text-align: center; /* yazı ortalama*/
+  transition:   transform 0.69s; /* geçis efekti : dönüsüm 0.69 saniyede*/
+  transform-style: preserve-3d; /* 3 boyutlu dönüşüm efekti*/
+  
+  
+  
+}
+
+.resim-kutusu:hover .resim-kutusu-ic {
+  transform: rotateY(-180deg);  /* y ekseninde 180 derece dönüsüm */
+ 
+
+  
+}
+
+.resim-kutusu-on, .resim-kutusu-arka {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.resim-kutusu-on {
+  background-color:transparent;
+  color: black;
+}
+
+.resim-kutusu-arka {
+  background-color: gray;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.kutu-yazi-golge
+{
+  text-shadow: 20px 8px 4px black;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  height: 7%;
+  line-height: 55px;
+  opacity: 0.80;
+
+
+}
